@@ -1,0 +1,9 @@
+alert("Are you amazing?");
+
+confirm("Are you sure?")
+
+prompt ("please enter amount of amazingness", 000)
+
+var score = prompt("Enter your score:", 100);
+var bonus = prompt("Add a bonus");
+alert('Score + Level Completion Bonus = ' + score * bonus);
