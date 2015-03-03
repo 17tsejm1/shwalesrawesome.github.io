@@ -1,3 +1,0 @@
-string1 = "可爱的猫";
-string2 = "(cute cat)";
-alert(string1 + string2); // 可爱的猫（cute cat）
