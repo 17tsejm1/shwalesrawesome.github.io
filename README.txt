@@ -1,51 +1,67 @@
-Overflow by HTML5 UP
+Aerial by HTML5 UP
 html5up.net | @n33co
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
 
-This is Overflow, a single page responsive site template by me, AJ, for HTML5 UP.
-As you can tell it's a bit unusual (it was inspired by a flowchart I was working
-on a few months back), but I think it'd make for a pretty cool portfolio. Includes
-a pop-up gallery, styling for all basic page elements, a handy configuration
-(see the top of js/init.js), and some experimental stuff I've been messing with
-lately (like the parallax background effect).
-	
-Demo images* courtesy of the talented, the awesome, THE one and only Felicia Simion,
-a photographer whose works will make your head spin in awe. See more of it here:
+This is Aerial, a single page, single screen responsive site template. Real simple.
+Makes heavy use of CSS animation (something I've been messing with a lot lately).
+Should work well as a landing page that just directs folks to your stuff elsewhere
+on the www. Sass sources are also included, so if you've never used Sass and you're
+interested in giving it a try, head on over to sass-lang.com (and if not, you can
+safely delete the "sass/" folder).
 
-http://ineedchemicalx.deviantart.com/
+The scrolling mountainous background was derived from "Icefields" by Ryan Schroeder,
+a talented photographer from Vancouver who graciously released it on Unsplash under
+the CC0 license. Be sure to check out his other stuff over at flickr (link below)
+as well as all the other kickass CC0-licensed images at Unsplash (unsplash.com).
 
-(* = Not included! Only meant for use with my own on-site demo, so please do NOT download
-and/or use any of Felicia's work without her explicit permission!)
+Questions/comments/issues = just email or find me on Twitter. Have fun!
 
 AJ
 n33.co @n33co dribbble.com/n33
 
 
+The Scrolling Background:
+
+	This relies entirely on CSS to do its thing, which is cool, but that makes
+	changing it a bit weird/tricky at first. You can still use pretty much any image
+	you want, but for best results make sure yours is:
+	
+	- Horizontally tileable.
+	- Wide and short.
+	- About 1500px wide.
+	- Fades to a solid color either at the top of bottom (which is used to fill
+	  the empty space above or below your image).
+
+	Now, there are two ways to use it: with CSS, or with Sass:
+
+	CSS:
+	
+		Look for this line in css/style.css (line 108 as of this writing):
+		
+			background: #348cb2 url("images/bg.jpg") bottom left;
+			
+		and use it to set the page background color, URL, and placement of
+		your image. It should be as close to 1500px wide as you can get it.
+
+	Sass:
+	
+		Set the value of $bg to the page background color, URL, and placement
+		of your image. Change $bg-width if your image is something other than
+		1500px wide.
+
+
 Credits:
 
-	Demo images:
-		Felicia Simion (ineedchemicalx.deviantart.com)
-			"Sleepless in Vienna" (ineedchemicalx.deviantart.com/art/Sleepless-in-Vienna-322880007)
-			"Time goes by too fast" (ineedchemicalx.deviantart.com/art/Time-goes-by-too-fast-335982438)
-			"Kingdom of the Wind" (ineedchemicalx.deviantart.com/art/Kingdom-of-the-Wind-348268044)
-			"Ad infinitum" (ineedchemicalx.deviantart.com/art/Ad-infinitum-354203162)
-			"Dressed in Clarity" (ineedchemicalx.deviantart.com/art/Dressed-in-Clarity-331333716)
-			"Raven" (ineedchemicalx.deviantart.com/art/Raven-306468505)
-			"I'll have a cup of Disneyland, please" (ineedchemicalx.deviantart.com/art/I-ll-have-a-cup-of-Disneyland-please-325596442)
-			"Cherish" (ineedchemicalx.deviantart.com/art/Cherish-320041163)
-			"Different." (ineedchemicalx.deviantart.com/art/Different-353708988)
-			"History was made here" (ineedchemicalx.deviantart.com/art/History-was-made-here-366723812)
-			"People come and go and walk away" (ineedchemicalx.deviantart.com/art/People-come-and-go-and-walk-away-284244677)
-			
+	Background Image:
+		Ryan Schroeder via Unsplash (unsplash.com - CC0 licensed)
+			"Icefields" (flickr.com/photos/ryanschroeder/11876741703)
+
 	Icons:
 		Font Awesome (fortawesome.github.com/Font-Awesome)
 
 	Other:
-		jQuery (jquery.com)
 		html5shiv.js (@afarkas @jdalton @jon_neal @rem)
-		CSS3 Pie (css3pie.com)
-		background-size polyfill (github.com/louisremi)
-		jquery.poptrox (n33.co)
-		jquery.scrolly (n33.co)
+		CSS3 PIE (css3pie.com)
+		Sass (sass-lang.com)
 		skel (n33.co)
